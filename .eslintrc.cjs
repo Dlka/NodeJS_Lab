@@ -1,14 +1,13 @@
 module.exports = {
   env: {
-    node: true,
+    browser: true,
     es2021: true,
   },
-  extends: ['standard', 'plugin:sonarjs/recommended'],
+  extends: 'standard',
   overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['sonarjs'],
   rules: {},
 }
