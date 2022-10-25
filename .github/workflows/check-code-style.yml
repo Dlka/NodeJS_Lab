@@ -18,13 +18,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with: 
-           node-version: 18
-           cache: 'npm'
-           cache-dependency-path: '**/package-lock.json'
+        with:
+          node-version: 18
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
       - run: npm ci
       - run: npm run format
       - run: npm run lint
-
-      
-
