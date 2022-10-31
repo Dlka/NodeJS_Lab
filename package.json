@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "npx eslint",
+    "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "npm run lint -- --fix",
     "format": "npx prettier --ignore-path .gitignore --check .",
     "format:fix": "prettier --ignore-path .gitignore --write ."
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/Dlka/NodeJS_Lab-1#readme",
   "devDependencies": {
     "eslint": "^8.26.0",
+    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-sonarjs": "^0.16.0",
     "prettier": "2.7.1"
   }
